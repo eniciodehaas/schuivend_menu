@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <title>inhoud schuift</title>
+  <meta name="author" content="Enicio de Haas">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #checkboxMenu:checked~main {
+      margin-left: 10em;
+    }
+
+    #menuLabel::after {
+      content: "\2630";
+      cursor: pointer;
+    }
+
+    #checkboxMenu:checked~main #menuLabel::after {
+      content: "\2717";
+      cursor: pointer;
+    }
+
+    nav {
+      position: fixed;
+    }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .5s cubic-bezier(.17, .67, .83, .96);
+    }
+  </style>
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="checkboxMenu">
+  <nav>
+    <h4>Menu</h4>
+    <ul>
+      <li>
+        <a href="inhoudSchuift.html" class="actief li1">inhoud schuift</a>
+      </li>
+      <li>
+        <a href="menuSchuift.html">menu schuift</a>
+      </li>
+      <li>
+        <a href="allesSchuift.html">alles schuift</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <label for="checkboxMenu" id="menuLabel"></label>
+    <h1>Vulkanen</h1>
+    <img src="vulkaan.jpg" alt="vulkaan">
+    <p>Wat zijn vulkanen?<br>Een vulkaan is een opening in het oppervlak van een planeet waar gesmolten gesteente (magma), gas en brokstukken van vast gesteente (tefra) door naar buiten komen. Rond zulke openingen wordt vaak een berg gevormd en men
+      sprak vroeger dan ook wel van een vuurspuwende berg. De momenten waarop materiaal door een vulkaan wordt uitgestoten worden uitbarstingen of erupties genoemd.
+    </p>
+    <p>Waar komen vulkanen voor?<br>Op Aarde worden vulkanen vooral aangetroffen in gebieden waar tektonische platen aan elkaar grenzen, dus de plaatsen waar ook aardbevingen voorkomen. Een uitzondering hierop vormen hotspots. Dit zijn gebieden waar
+      heet materiaal uit de mantel door de aardkorst heen naar boven komt.
+    </p>
+    <p>Andere planeten<br>Ook op andere steenachtige planeten en manen binnen ons zonnestelsel komen vulkanen voor. Zo zijn op de planeten Venus en Mars en de manen Io (Jupiter) en Triton (Neptunus) vele vulkanen waargenomen. Van de laatste twee
+      wordt vermoed dat ze vloeibare stikstof of methaan uitstoten; het vulkanisme waarbij dit optreedt wordt cryovulkanisme genoemd.
+    </p>
+    <p>Rond vulkanen<br>Vulkanische vlakten, en ook geisers, warmwaterbronnen en kokende modderbronnen zijn verschijnselen die in de buurt van vulkanen kunnen worden aangetroffen, maar omdat ze geen uitgesproken reliëf kennen zijn het geen vulkanen.
+      Ze ontstaan doordat de aardkorst in de buurt van vulkanen dunner is dan op andere plaatsen.
+    </p>
+    <p>Samenstelling<br>Een veelgebruikte classificatie voor vulkanen is gebaseerd op de samenstelling van het gesteente dat gevormd wordt.
+      <ul>
+        <li>Zure vulkanen: als het magma felsisch (of zuur) van samenstelling is (de concentratie silica is boven de 65%) is het magma stroperig. Daardoor kan deze massa de kratermond moeilijk verlaten of kan het de opening door plugvorming zelfs
+          verstoppen. Dit laatste is er de oorzaak van dat de erupties bij dergelijke vulkanen vaak zeer explosief verlopen en gepaard gaan met gloedwolken. Eenmaal aan de oppervlakte stolt het magma, dat nu lava wordt genoemd, relatief snel. De
+          Lassen Peak in het Lassen Volcanic National Park in Californië is een goed voorbeeld van een zure vulkaan. Ook het stollingsgesteente ontstaan uit de Mount Saint Helens in de staat Washington heeft een zure samenstelling.</li>
+        <li>Basische vulkanen: als het magma mafisch (of basisch) van samenstelling is (bij lage silicaconcentraties) is het magma minder stroperig en zal de eruptie minder explosief verlopen omdat het magma de krateropening gemakkelijker kan
+          verlaten. De lava kan door de lage viscositeit langere afstanden afleggen, en stroomt veel sneller dan zure lava. Vulkanen van dit type worden onder andere aangetroffen op IJsland en Hawaï.</li>
+      </ul>
+    </p>
+    <br>
+    <p>Vorm<br>Bij een andere classificatiemethode wordt naar de vorm van de vulkaan gekeken.
+      <ul>
+        <li>Schildvulkanen zijn gevormd door laag-viskeuze (dus mafische) lava die ver kan uitstromen, waardoor de vulkanen gekenmerkt worden door een brede basis en langzaam oplopende, flauwe hellingen. De grootste vulkanen op aarde zijn van dit
+          type. De Mauna Loa op Hawaï met een diameter van 120 km is hiervan een duidelijk voorbeeld.</li>
+        <li>Kegelvulkanen (of Sintelkegels) ontstaan als gruis, puin en veelal kleine rotsblokken die door de vulkanische opening worden uitgeworpen en zich daaromheen ophopen. Hierdoor ontstaat er een kegel met in het midden een krater. Een
+          voorbeeld is de Hverfell bij Mývatn op IJsland.</li>
+        <li>Stratovulkanen (of koepelvulkanen) zijn het tegenovergestelde van schildvulkanen. De lava die uit dit type vulkaan komt is veel viskeuzer (en dus zuurder van samenstelling) en taaier dan de lava geproduceerd door schildvulkanen. Daardoor
+          kan de lava niet ver uitstromen. De lava hoopt zich als het ware op waardoor de vulkaan heel steile wanden vormt. De Fuji in Japan is een bekende stratovulkaan.</li>
+        <li>Calderavulkanen zijn vulkanen die ontstaan in de gevulde kegel van een oudere vulkaan. Het magma gebruikt dikwijls nog de oude kraterpijp tot een bepaalde diepte waar dan via kleinere kanalen meerder nieuwe kleine vulkanen in de oude
+          krater ontstaan.</li>
+        <li>Het laatste type vulkanen vormen de supervulkanen (of spleetvulkanen). Dit zijn vulkanen die weinig reliëf hebben en vaak voorkomen als kloven of gaten in het landschap. Over een periode van een miljoen jaar barsten ze slechts 1 à 2 keer
+          uit en stoten daarbij grote hoeveelheden as en stof uit (meer dan 2500 km³). Een voorbeeld is de Toba op Sumatra en de Yellowstone-caldera</li>
+      </ul>
+    </p>
+    <p>Kracht<br>Een nog andere classificatie gaat uit van de explosieve kracht van de uitbarsting van de vulkaan, waarbij de naam van een bekende vulkaan dikwijls als classificatie voor de betreffende explosieve kracht geldt. De Amerikanen Chris
+      Newhall van de United States Geological Survey en Steve Self van de Universiteit van Hawaï hebben in 1982 de vulkanische-explosiviteitsindex (VEI) opgezet voor het geven van een relatieve meting van de explosiefheid van vulkanische
+      uitbarstingen. Deze index loopt van 0 tot 8; elke eenheid hoger betekent een 10 keer zwaardere explosieve kracht. Zo heeft de Mauna Loa een VEI van 1, de Etna een index 2, de Krakatau een index 6 en een supervulkaan als de Yellowstonecaldera
+      een VEI van 8.</p>
+    <footer>
+      <p>Bron:<a href="https://nl.wikipedia.org/wiki/Vulkaan" target="_blank">https://nl.wikipedia.org/wiki/Vulkaan</a></p>
+      <div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

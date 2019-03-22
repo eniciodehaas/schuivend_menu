@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <title>menu schuift</title>
+  <meta name="author" content="Enicio de Haas">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #checkboxMenu:checked~nav {
+      margin-left: 0em;
+      transition: margin-left .5s cubic-bezier(.17, .67, .83, .96);
+    }
+
+    #menuLabel::after {
+      content: "\2630";
+      cursor: pointer;
+      margin-left: 0;
+      transition: margin-left .5s cubic-bezier(.17, .67, .83, .96);
+    }
+
+    #checkboxMenu:checked~main #menuLabel::after {
+      content: "\2717";
+      cursor: pointer;
+      margin-left: 5em;
+      transition: margin-left .5s cubic-bezier(.17, .67, .83, 1.36);
+    }
+
+    nav {
+      position: fixed;
+      margin-left: -10em;
+      z-index: 1;
+      transition: margin-left .5s cubic-bezier(.17, .67, .83, .96);
+    }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .5s cubic-bezier(.17, .67, .83, .96);
+    }
+  </style>
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="checkboxMenu">
+  <nav>
+    <h4>Menu</h4>
+    <ul>
+      <li>
+        <a href="inhoudSchuift.html" class="li1">inhoud schuift</a>
+      </li>
+      <li>
+        <a href="menuSchuift.html" class="actief">menu schuift</a>
+      </li>
+      <li>
+        <a href="allesSchuift.html">alles schuift</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <label for="checkboxMenu" id="menuLabel"></label>
+    <h1>Tsunami's</h1>
+    <img src="tsunami.jpg" alt="tsunami">
+    <p>Wat is een Tsunami?<br>Een tsunami is een extreem hoge golf uit de zee die de kuststrook onverwacht overspoelt, veelal veroorzaakt door een zeebeving, of bijvoorbeeld een golf in een fjord als gevolg van het afbreken van een deel van een berg
+      aan de fjord. Het is een Japanse samenstelling van tsu ('haven') en nami ('golf').</p>
+    <p>Oorzaken<br>Elke gebeurtenis waardoor een grote hoeveelheid water in korte tijd wordt verplaatst kan een tsunami veroorzaken. Zo'n vloedgolf kan onder meer veroorzaakt worden door:
+      <ul>
+        <li>een zeebeving, dit is een aardbeving waarvan het epicentrum in zee ligt;</li>
+        <li>een vulkanische uitbarsting onder zee of vlak aan zee, eventueel in combinatie met een grote aardverschuiving, modderstroom of gloedwolk langs de vulkaanhelling de zee in;</li>
+        <li>(zeer zeldzaam) een meteorietinslag</li>
+      </ul>
+      Tsunami's komen het meest voor rondom de Grote Oceaan, omdat langs alle randen van deze oceaan door platentektoniek veelvuldig aardbevingen plaatsvinden.
+    </p>
+    <p>Natuurkunde van een tsunami<br>Bij schoksgewijze beweging van de zeebodem langs geologische breuklijnen kunnen plotsklaps grote volumes water opgetild worden of wegzakken, vooral als zich een zeebeving op kilometers diepte voltrekt. Aan het
+      wateroppervlak ontstaat in incidentele gevallen over een groot gebied een golf met een hoogte van 'slechts' enkele decimeters en een enorme golflengte (tot honderden kilometers lengte). De golf verplaatst zich in alle richtingen vanuit het
+      ontstaansgebied, waarbij in het ontstaansgebied secundaire golven ontstaan. Afhankelijk van de beweging van de zeebodem aan weerszijden van de breuklijn vertrekt eerst een golfdal (een kuil in de waterspiegel) of juist een golftop.<br><br>
+
+      Op de oceaan is het passeren van een dergelijke langgerekte golf nauwelijks merkbaar: windgolven kunnen daar veel grotere hoogtes bereiken (tot 10 meter) maar die hebben slechts een golflengte van 200 meter. Nauwkeurige dieptemeters en
+      gespecialiseerde satellieten kunnen tsunamigolven op de oceaan direct meten. Wanneer de tsunamigolf bij de kust ondieper water bereikt vertraagt de voortplantingssnelheid aanzienlijk. Daarbij wordt de golf hoger, afhankelijk van de locatie
+      langs de kustlijn (baai, rif, kaap, fjord) en grootte van de golf op open zee tot enige tientallen meters boven de normale vloedlijn. De energie die in een tsunamigolf is opgeslagen is veel groter dan in een losse windgolf. De waterbeweging
+      vindt bij een tsunami plaats tot op de zeebodem, terwijl een golf door de wind slechts aan het oppervlak van de zee te merken is. Bij het bereiken van een kritieke hoogte aan de kust breekt de tsunami en rollen krachtige uitlopers verder het
+      land in. In dit krachtige proces verliest de tsunami zijn energie uiteindelijk aan turbulentie en wrijving met zeebodem, kust, vegetatie en bebouwing.<br><br>
+
+      Een windgolf bereikt een snelheid tot 40 km/u, maar een tsunami kan zich met een veel hogere snelheid verplaatsen. De periode van een tsunami (het tijdsverloop tussen het passeren van twee toppen) bedraagt een kwartier tot een uur. In diep
+      water, zoals in de oceanen, bereiken tsunami's hun grootste snelheid, tot 1000 kilometer per uur. De snelheid vg van de golf hangt af van de waterdiepte volgens de relatie:</p>
+      <img src="formule.svg" alt="formule van een tsunami" class="formule"><br><br>
+      <p>Waarin geldt:
+      <ul>
+        <li><img src="v.svg" alt="v" class="letters"> is de golfsnelheid in m s−1</li>
+        <li><img src="g.svg" alt="g" class="letters"> is de valversnelling van 9,81 m s−2</li>
+        <li><img src="d.svg" alt="d" class="letters"> is de diepte in m</li>
+      </ul>
+      </p>
+      <p>Waarschuwingssystemen<br>Waarschuwingssystemen voor vloedgolven berusten op het bewaken van de beweging van het oceaanoppervlak en van grote aardbevingen dieper in zee. Sinds 1965 is het Tsunami Warning System in the Pacific actief, dat getijdestations gebruikt om tsunami's te volgen. Sinds 1996 bestaat het DART-systeem (Deep-ocean Assessment and Reporting of Tsunamis), dat in 2004 nog in een experimenteel stadium verkeerde. Waterdrukmeters op diepte communiceren via geluidssignalen met boeien, die erboven drijven. Tsunamigolven kunnen door drukmeters op grotere diepte waargenomen worden doordat waterbewegingen door windgolven niet zo diep reiken en doordat de drukverschillen door getijdebewegingen op de oceaan regelmatig en volkomen voorspelbaar zijn.</p>
+
+  <footer>
+    <p>Bron:<a href="https://nl.wikipedia.org/wiki/Tsunami" target="_blank">https://nl.wikipedia.org/wiki/Tsunami</a></p>
+    <div id="validatie">
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+      </a>
+    </div>
+  </footer>
+</main>
+</body>
+
+</html>
